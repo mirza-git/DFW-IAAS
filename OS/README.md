@@ -1,4 +1,4 @@
-#H1 AWS Linux tutorials
+# AWS Linux tutorials
 
 This section will mostly cover Linux and related tutorials - each tutorials will be divided by topic
 
