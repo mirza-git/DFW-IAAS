@@ -2,7 +2,7 @@
 
 For this tutorial, you will need AWS ec2 instance (t2.micro should work) and three EBS volumes (8gib) attached to ec2 instance.
 
-## 1 Physical Volume
+## 1 -  Physical Volume
 
 In this section we take RAW Linux storage devices and carve out physical volume from single or multiple RAW device(s).
 
@@ -57,7 +57,7 @@ pvdisplay
 
 Command above displays similar output to pvs, but bit with more details.
 
-## 2 Create Logical Volume 
+## 2 -  Create Logical Volume 
 
 Before we create new logical volume - let's verify if there is a existing logical volume group. 
 
