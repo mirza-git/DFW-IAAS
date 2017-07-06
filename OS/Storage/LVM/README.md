@@ -134,7 +134,7 @@ After you have created Physical Volume, Volume Group and LVM - we can format the
 Execute command below to format LVM with ext4 filesystem and use the LVM "location PV" path  from lvdisplay command
 
 ```
-mkf.ext4 /dev/VolGroup00/myfirst_volume
+mkfs.ext4 /dev/VolGroup00/myfirst_volume
 ```
 
 ## 4 -  Mount the LVM to system
@@ -150,6 +150,44 @@ Mount LVM:
 ```
 mount /dev/VolGroup00/myfirst_volume /myFirstVG
 ```
+
+In order to auto mount the filesystem on instance boot, add following to "/etc/fstab" by running command below:
+
+```
+echo "/dev/VolGroup00/myfirst_volume /myFirstVG ext4 defaults 1 2" >> /etc/fstab
+```
+
+## 5 - Extend existing LV and FS
+
+First extend LV. Add 1 G
+
+
+```
+lvextend -L +1G /dev/VolGroup00/myfirst_volume
+```
+
+lvdisplay will show LV is now 1G bigger but df -h will show FS is still the same size. Now resize FS
+
+Now, let's resize the filesystem by running command below:
+
+```
+resize2fs /dev/mapper/myfirst_volume
+```
+
+Check FS size using df -h
+
+Now add third disk to Volume group and increase size of LV and FS - by running commands below:
+
+```
+pvcreate /dev/xvdh 
+vgextend myTestVg /dev/xvdh 
+lvextend -L +10G /dev/myTestVg/myLv
+resize2fs /dev/myTestVg/myLv
+```
+
+
+
+
 
 ## Conclusion
 
