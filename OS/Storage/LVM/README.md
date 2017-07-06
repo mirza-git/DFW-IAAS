@@ -116,8 +116,50 @@ In section 2.1 we created VolumeGroup, now let's make VG usable so we can create
 Use command below to create LVM and use only 5GB out of total storage from VG:
 
 ```
-lvcreate -l 5G -n logical_vol1 VolGroup00
+lvcreate -l 5G -n myfirst_volume VolGroup00
 ```
+
+After succesfully creating LVM, verify the size of LVM and get LV Path - you will need this info to create filesystem on-top of it and mount it location.
+
+```
+lvdisplay -m
+```
+
+With option "-m" will display what devices headers are witten with blocks.
+
+## 3 -  Create File system
+
+After you have created Physical Volume, Volume Group and LVM - we can format the logical volume and create filesystem.
+
+Execute command below to format LVM with ext4 filesystem and use the LVM "location PV" path  from lvdisplay command
+
+```
+mkf.ext4 /dev/VolGroup00/myfirst_volume
+```
+
+## 4 -  Mount the LVM to system
+
+First create directory where you want to mount the filesystem:
+
+```
+mkdir /myFirstVG
+```
+
+Mount LVM:
+
+```
+mount /dev/VolGroup00/myfirst_volume /myFirstVG
+```
+
+## Conclusion
+
+In this tutorial, you learn how to create Physical Volumes, Volume Group and Logical Volume. This tutorial focused on hands-on, hence practicing will make you comfortable with storage management within Linux.  
+
+In next topic we will discuss extending LMV, Disk management with RAID. 
+
+
+
+
 
 
 
