@@ -2,7 +2,7 @@
 
 For this tutorial, you will need AWS ec2 instance (t2.micro should work) and three EBS volumes (8gib) attached to ec2 instance.
 
-#### Note: All of the command in this tutorial must be done as "root" user - be very careful on live system, it is important that you understand what each step is doing. 
+##### <span style="color:red"> Note: All of the command in this tutorial must be done as "root" user - be very careful on live system, it is important that you understand what each step is doing. </span>
 
 
 ## 1 -  Physical Volume
