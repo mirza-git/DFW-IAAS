@@ -93,11 +93,11 @@ vgdisplay
 Key things to note here:
 
 ```
-#### Format
-#### VG Access
-#### VG Status
-#### VG Size
-#### VG UUID 
+* Format
+* VG Access
+* VG Status
+* VG Size
+* VG UUID 
 ```
 
 now execute "pvscan" and notice that pvscan show LVM name, if you try to drop disk from physical volume, system will not let you do that unless you remove the disk from LVM.
