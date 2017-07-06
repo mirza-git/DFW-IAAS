@@ -4,6 +4,9 @@ For this tutorial, you will need AWS ec2 instance (t2.micro should work) and thr
 
 ##### <span style="color:red"> Note: All of the command in this tutorial must be done as "root" user - be very careful on live system, it is important that you understand what each step is doing. </span>
 
+<span style="color:blue">some *This is Blue italic.* text</span>
+
+
 
 ## 1 -  Physical Volume
 
