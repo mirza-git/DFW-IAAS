@@ -45,4 +45,6 @@ mount /dev/md0 /data01
 
 Update fstab file so this FS will mount automatically during server startup
 
+```
 echo "/dev/md0 /data01 ext4 defaults 0 0" >> /etc/fstab
+```
