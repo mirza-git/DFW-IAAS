@@ -121,7 +121,7 @@ In section 2.1 we created VolumeGroup, now let's make VG usable so we can create
 Use command below to create LVM and use only 5GB out of total storage from VG:
 
 ```
-lvcreate -l 5G -n myfirst_volume VolGroup00
+lvcreate -L 5G -n myfirst_volume VolGroup00
 ```
 
 After succesfully creating LVM, verify the size of LVM and get LV Path - you will need this info to create filesystem on-top of it and mount it location.
