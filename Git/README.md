@@ -16,8 +16,9 @@ After fulfilling above requirements, you should be able to create/update/delete 
 
 tutorial are broken down by topics
 
-⋅⋅* Create repository
-⋅⋅* add README.md file repository
-⋅⋅* Update README.md  and update repository
-⋅⋅* Delete README.md repository
-⋅⋅* Create branch of master repository
+1. Create repository
+2. add README.md file repository
+3. Update README.md  and update repository
+4. Delete README.md repository
+5. Create branch of master repository
+6. Authenticate using SSH keys
