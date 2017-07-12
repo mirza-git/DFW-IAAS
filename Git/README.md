@@ -1,4 +1,4 @@
-# GIT tutorial - 
+# GIT tutorial -
 
 ##### *Note: Git client or GUI should be installed on client workstation - all git command*
 
@@ -9,5 +9,15 @@ In this tutorial we will work with GitHub - GitHub is version control tool that 
 
 In order to have successful LAB, you will need following:
 
+...*GitHub account*
+...*Git client/gui installed locally*
 
-*GitHub account*
+After fulfilling above requirements, you should be able to create/update/delete repositories.
+
+tutorial are broken down by topics
+
+...##### Create repository
+...##### add README.md file repository
+...##### Update README.md  and update repository
+...##### Delete README.md repository
+...##### Create branch of master repository 
