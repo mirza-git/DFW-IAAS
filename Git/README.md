@@ -9,8 +9,8 @@ In this tutorial we will work with GitHub - GitHub is version control tool that 
 
 In order to have successful LAB, you will need following:
 
-⋅⋅* GitHub account
-⋅⋅* Git client/gui installed locally
+* GitHub account
+* Git client/gui installed locally
 
 After fulfilling above requirements, you should be able to create/update/delete repositories.
 
@@ -20,4 +20,4 @@ tutorial are broken down by topics
 ⋅⋅* add README.md file repository
 ⋅⋅* Update README.md  and update repository
 ⋅⋅* Delete README.md repository
-⋅⋅* Create branch of master repository 
+⋅⋅* Create branch of master repository
