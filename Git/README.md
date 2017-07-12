@@ -22,3 +22,20 @@ tutorial are broken down by topics
 4. **Delete README.md repository -- 04-delete-repo.md**
 5. **Create branch of master repository -- 05-create-branch.md**
 6. **Authenticate using SSH keys -- 06-create-sshkeys.md**
+
+Let's install Git locally on our client host:
+
+For Linux (CentOS/RedHat/AWS Linux):
+```
+sudo yum install -y git
+```
+
+For Mac users:
+```
+brew install git
+```
+
+For windows users:
+```
+https://git-scm.com/download/win
+```
