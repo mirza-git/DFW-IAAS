@@ -42,5 +42,7 @@ https://git-scm.com/download/win
 
 Setup git local with your userID
 
-git config --global user.name "aws-repo"
-git config --global user.email "awsinstructor@gmail.com"
+```
+git config --global user.name "First_Name Last_name"
+git config --global user.email "youremailaddress"
+```
