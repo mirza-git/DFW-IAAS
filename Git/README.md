@@ -17,7 +17,7 @@ After fulfilling above requirements, you should be able to create/update/delete 
 tutorial are broken down by topics
 
 1. **Create repository -- 01-create-repo.md**
-2. **Add README.md file repository -- 02-add-repo.md**
+2. **Add README.md file repository -- 02-add-files-repo.md**
 3. **Update README.md  and update repository -- 03-update-repo.md**
 4. **Delete README.md repository -- 04-delete-repo.md**
 5. **Create branch of master repository -- 05-create-branch.md**
@@ -39,3 +39,8 @@ For windows users:
 ```
 https://git-scm.com/download/win
 ```
+
+Setup git local with your userID
+
+git config --global user.name "aws-repo"
+git config --global user.email "awsinstructor@gmail.com"

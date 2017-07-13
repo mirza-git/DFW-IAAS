@@ -9,20 +9,8 @@ In this tutorial we will work with GitHub - GitHub is version control tool that 
 
 In this tutorial we will create local repository, create README.md document and sync repository with GitHub
 
-#### 1 - Create new repo  
-
-You can create GitHub repo two ways, using GitHub via browser or via REST-API
-
-##### Repo via Web browser
-
-1. Sign into your GitHub account
-2. Click "Start a project"
-3. Name your project "my_first_repo" and take everything default
-
-##### Repo via REST-API
-
-Execute command below to create REPO:
+#### 1 - Commit changes
 
 ```
-curl -u 'your-github-user' https://api.github.com/user/repos -d '{"name":"my_first_repo","description":"This project is a test"}'
+git commit -m "first commit"
 ```
