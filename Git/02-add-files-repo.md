@@ -13,6 +13,7 @@ In this tutorial we will create local repository, create README.md document and 
 
 ```
 mkdir my_first_repo
+cd my_first_repo
 ```
 
 ##### *Note: If using windows, this can be either done from command prompt or Windows powershell*
@@ -21,7 +22,7 @@ mkdir my_first_repo
 #### 3 - Create new document called README.md
 
 ```
-echo "this is my test document" >> my_first_repo/README.md
+echo "this is my test document" >> README.md
 ```
 ##### *Note: On Windows "echo" statement will not work - you can use notepad or file editor and save document under directory in step-1*
 
