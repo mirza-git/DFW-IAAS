@@ -18,8 +18,8 @@ tutorial are broken down by topics
 
 1. **Create repository -- 01-create-repo.md**
 2. **Add README.md file repository -- 02-add-files-repo.md**
-3. **Update README.md  and update repository -- 03-update-repo.md**
-4. **Delete README.md repository -- 04-delete-repo.md**
+3. **Commit and Update README.md  to repository -- 03-update-repo.md**
+4. **Delete README.md from repository -- 04-delete-repo.md**
 5. **Create branch of master repository -- 05-create-branch.md**
 6. **Authenticate using SSH keys -- 06-create-sshkeys.md**
 
