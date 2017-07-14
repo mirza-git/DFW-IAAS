@@ -5,7 +5,7 @@ You can format Linux output nicely for better visual experience, for example run
 Using command "column" converts the output in tabular format and here is example with and without column command.
 
 mount command generic output:
-![alt text](http://imgur.com/63GQw9l "Logo Title Text 1")
+![alt text](http://i.imgur.com/63GQw9l.png "Logo Title Text 1")
 
 mount command with columnar output:
-![alt text](http://imgur.com/x8lHE3D "Logo Title Text 1")
+![alt text](http://i.imgur.com/x8lHE3D.png "Logo Title Text 1")
