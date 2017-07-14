@@ -27,3 +27,5 @@ cat /etc/passwd | column -t -s:
 ```
 
 ![alt text](http://i.imgur.com/WpWHx27.png)
+
+Now let's
