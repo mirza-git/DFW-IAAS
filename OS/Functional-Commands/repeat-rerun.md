@@ -11,6 +11,31 @@ echo "Day is : $i"
 done
 ```
 
+So, let's break it down of what is happening in code above -
+
+The BASH way of using "for" loops is somewhat different to the way most other programming and scripting languages handle "for" loops. Let's break the script down...
+
+In a BASH "for" loop all, the statements between do and done are performed once for every item in the list.
+
+In the above example, the list is everything that comes after the word in (i.e. Mon Tues Wed Thus Fri).
+
+Each time the loop iterates, the next value in the list is inserted into the variable specified after the word "for". In the above loop, the variable is called number.
+
+The echo statement is used to displayed information to the screen.
+
+Therefore, this example takes the numbers 1 through 5 and outputs them one by one to the screen:
+
+```
+Day is : Mon
+Day is : Tues
+Day is : Wed
+Day is : Thus
+Day is : Fri
+```
+
+
+Few more examples:
+
 Now lets print numeric dates:
 
 ```
@@ -30,3 +55,5 @@ do
        date -d "-$i day" +"File date is : %Y%m%d"
 done
 ```
+
+### Challenge - generate 100 random number using "for loop"
