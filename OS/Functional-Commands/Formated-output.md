@@ -18,3 +18,12 @@ mount |column -t
 ```
 
 ![alt text](http://i.imgur.com/x8lHE3D.png "Logo Title Text 1")
+
+
+Another example of output from "/etc/passwd" - notice I am using ":" as field separator
+
+```
+cat /etc/passwd | column -t -s:
+```
+
+![alt text](http://i.imgur.com/WpWHx27.png)
