@@ -56,4 +56,5 @@ do
 done
 ```
 
-### Challenge - generate 100 random number using "for loop"
+### Challenge # 1 - generate 100 random number using "for loop"
+### Challenge # 2 - generate 100 random files and write it to /tmp directory
