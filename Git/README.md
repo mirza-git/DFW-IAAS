@@ -1,4 +1,4 @@
-# GIT tutorial -
+# GIT tutorial 
 
 ##### *Note: Git client or GUI should be installed on client workstation - all git command*
 

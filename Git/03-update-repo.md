@@ -7,7 +7,7 @@
 
 In this tutorial we will work with GitHub - GitHub is version control tool that allows multiple users to modify and update code with revision control
 
-In this tutorial we will create local repository, create README.md document and sync repository with GitHub
+In this tutorial we will commit changes and update changes to GitHub.
 
 #### 1 - Commit changes
 
