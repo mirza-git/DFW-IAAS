@@ -29,6 +29,12 @@ Note down public an private IP address of target EC2 instance
 Default inventory file should be in /etc/ansible/hosts but you can create in your current dir and provide as parameter. 
 Cerate hosts file with private IP address of target ec2 instance
 
+#### *Get private ip address of ec2 target server*
+
+```
+curl http://169.254.169.254/latest/meta-data/local-ipv4
+```
+
 [TargetServer]
 172.31.69.224
 
