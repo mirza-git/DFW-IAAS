@@ -5,13 +5,20 @@
 Login to source and install ansible
 
 
+*Execute commands as "root" user.*
+
 ```
 sudo pip install --upgrade pip
 
-sudo pip install ansible
+pip install ansible
 
 sudo pip install --upgrade ansible
+```
 
+Exit as root user 
+
+```
+exit
 
 mkdir ansible
 ```
