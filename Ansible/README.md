@@ -1,8 +1,11 @@
-Create two Ec2 instances source and target
+# Ansible EC2 - Hands on
+
+##Create two Ec2 instances source and target
 
 Login to source and install ansible
 
 
+```
 sudo pip install --upgrade pip
 
 sudo pip install ansible
@@ -11,6 +14,7 @@ sudo pip install --upgrade ansible
 
 
 mkdir ansible
+```
 
 
 
@@ -23,80 +27,87 @@ Cerate hosts file with private IP address of target ec2 instance
 
 
 
-Check version of ansible
+##Check version of ansible
 
+```
 ansible --version
-
+```
 
 Ansible Command Line
 Ansible playbook
 Ansible Roles
 
 
-Ansible Command Line
+## Ansible Command Line
 
 Run Simple test ping. This is not ping command. It will login to target server and check connectivity. 
 
 
-
+```
 ansible all -i hosts -m ping
-
+```
 
 Now do the same with privileged user
-
+```
 ansible all -i hosts -b -m ping
-
+```
 You can verify using shell module which runs OS commands
-
+```
 ansible all -i hosts -b -m shell -a 'whoami'
 
 ansible all -i hosts -m shell -a 'whoami'
-
+```
 
 Lets intall some packages using yum module
 
 
-
+```
 ansible all -i hosts -b -m yum -a 'pkg=sysstat state=installed'
 
 ansible all -i hosts -b -m yum -a 'pkg=sysstat state=latest'
 
 ansible all -i hosts -b -m yum -a 'pkg=vim state=latest'
+```
 
-Remove vim package
-
+## Remove vim package
+```
 ansible all -i hosts -b -m yum -a 'pkg=vim state=absent'
+```
 
-Now reinstal using latest command. 
-
+## Now reinstal using latest command. 
+```
 ansible all -i hosts -b -m yum -a 'pkg=vim state=latest'
+```
 
-Install apache 
+#Install apache 
 
+```
 ansible all -i hosts -b -m yum -a 'pkg=httpd state=latest'
 
 
 ansible all -i hosts -b -m yum -a 'pkg=httpd state=latest'
 
+```
 
 
-Start Apache server. Use module service
+## Start Apache server. Use module service
 
-
+```
 ansible all -i hosts -b -m service -a 'name=httpd state=started'
 
 
 ansible all -i hosts -b -m service -a 'name=httpd state=stopped'
+```
 
-Now remove the httpd package
+## Now remove the httpd package
 
 
-
+```
 ansible all -i hosts -b -m yum -a 'pkg=httpd state=absent'
+```
 
 
-
-Ansible Playbooks
+## Ansible Playbooks
 Create playbook to install apache web server
 
 ---
@@ -112,7 +123,7 @@ Now run playbook using ansible-playbook command
 ansible-playbook -i hosts -b installhttpd.yml
 
 
-Create playbook to install apache web server and start webserver
+## Create playbook to install apache web server and start webserver
 
 
 ---
@@ -129,11 +140,11 @@ Create playbook to install apache web server and start webserver
 
 #
 
-Create a playbook to Stop and rmeove webserver
+## Create a playbook to Stop and rmeove webserver
 
 
 HANDLERS
-Create playbook to install apache web server and start webserver using handlers
+## Create playbook to install apache web server and start webserver using handlers
 
 
 
