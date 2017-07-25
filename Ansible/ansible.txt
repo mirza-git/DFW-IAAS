@@ -11,9 +11,11 @@ Login to source and install ansible
 
 pip install --upgrade pip
 
-sudo pip install ansible
+sudo su -
 
-sudo pip install --upgrade ansible
+pip install ansible
+
+pip install --upgrade ansible
 
 
 mkdir ansible
