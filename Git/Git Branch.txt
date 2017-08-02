@@ -59,7 +59,7 @@ git status
 #include updates to a particular file/director in the next commit.
 git add .
 
-#The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating
+#The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and itâ€™s immutably baked into the commits you start creating
 
 git config --global user.name "git username"
 git config --global user.email "git user email address"
@@ -79,11 +79,6 @@ git branch -d <branch name>
 *** create a branch in  correct location to carry files over to new branch. If user is in master branch and creates a new branch all files from master branch will carry over.
 If a user is in ansible branch and creates a new branch all files from ansible will carry over to new branch.
 
-
-[7:40 PM, 7/19/2017] Hameed Khan Aws Epic Study Group: https://backlogtool.com/git-guide/en/stepup/stepup1_1.html                        
-[8:12 PM, 7/19/2017] Hameed Khan Aws Epic Study Group: https://datasift.github.io/gitflow/IntroducingGitFlow.html
- 
-https://datasift.github.io/gitflow/IntroducingGitFlow.html
 
 
  	
