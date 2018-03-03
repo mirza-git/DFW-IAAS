@@ -32,61 +32,62 @@
 
 ***Linux Commands for Branch:***
 
-#clone remote repo to server 
-git clone https://github.com/naqvisn/test1.git
+####clone remote repo to server 
+git clone https://github.com/dfwmtc/test1.git
 
-#check branches, * represent which branch your are in
+####check branches, * represent which branch your are in
 git branch
 
-#create a new branch, but doesn't change your current branch
+####create a new branch, but doesn't change your current branch
 git branch jenkins
 
-#change a branch
+####change a branch
 git checkout dev
 
-#push new branch to github
+####push new branch to github
 git push origin <branch name>
 
-#create new branch and change to new branch
-git checkout -b ansible
+####create new branch and change to new branch
+git checkout -b githubr
 
-#create a new file in a branch
-echo "learn ansible" > ansible.txt
+####create a new file in a branch
+echo "learn Github" > Github.txt
 
-#status of all changes
+####status of all changes
 git status
 
-#include updates to a particular file/director in the next commit.
+###include updates to a particular file/director in the next commit.
 git add .
 
-#The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating
-
+## The first thing you should do when you install Git is to set your user name and email address. This is important because every Git commit uses this information, and it’s immutably baked into the commits you start creating
+```
 git config --global user.name "git username"
 git config --global user.email "git user email address"
+```
 
-#add files to the directory
+####add files to the directory
+```
 git commit -m "ansible files"
+```
 
-#to merge a branch to master. Switch to master branch first
+####to merge a branch to master. Switch to master branch first
+```
 git checkout master
+```
 
-#merge branch ansible to master
+###merge branch ansible to master
+```
 git merge <branch name>
+```
 
-#delete a branch
+
+###delete a branch
+```
 git branch -d <branch name>
+```
 
 *** create a branch in  correct location to carry files over to new branch. If user is in master branch and creates a new branch all files from master branch will carry over.
 If a user is in ansible branch and creates a new branch all files from ansible will carry over to new branch.
 
 
 
- 	
-
-
-
-
-
-
-
-	
