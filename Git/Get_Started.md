@@ -1,32 +1,32 @@
-GIT and GIT HUB for dummies:
-https://backlogtool.com/git-guide/en/
+![alt text](https://camo.githubusercontent.com/fb782da4019ab66eeea35cc9b9ce73b2438b1688/687474703a2f2f646f632e72756c746f722e636f6d2f696d616765732f6769746875622d6c6f676f2e706e67 "Logo Title Text 1")
 
-GIT:		Version Control Software
-		Collabration Software
+# GIT and GIT HUB for dummies:
+## https://backlogtool.com/git-guide/en/
 
-GIT HUB:	Web Service. Runs GIT Software, where user can create project and save their files.
+#### GIT:		Version Control Software Collabration Software 
+#### GIT HUB:		Web Service. Runs GIT Software, where user can create project and save their files.
 
-Repo:		Repository => A project, composed of all sort of files.
+#### Repo:		Repository => A project, composed of all sort of files.
 
-Commit:		Make changes and Save file in GIT HUB, by making commit and add notes for version control.
-		Commit all to see history of all changes and have a unique hash value.
+#### Commit:		Make changes and Save file in GIT HUB, by making commit and add notes for version control.
+#### 			Commit all to see history of all changes and have a unique hash value.
 
-Commit Hash:	A unique identifier for a particular commit.
+#### Commit Hash:	A unique identifier for a particular commit.
 
-Branch:		A seperate path for saving files.
-		Moving your repository in a different direction and tracking those changes independent of the 		main or master branch.
-		By default when user create a GIT repository all files will be saved in Master Branch.
-		Branch allows each user to branch out from the Master Branch and isolate their work 				from others. Another good thing about branch is that it helps Git to easily merge the
-		versions later on.
-		Different branches can be merged into any one branch provided that they belong to the same 			repository.
+#### Branch:		
+		A seperate path for saving files.  Moving your repository in a different direction and tracking those changes 
+		independent of the main or master branch.  By default when user create a GIT repository all files will be saved in Master Branch.
+		Branch allows each user to branch out from the Master Branch and isolate their work from others. 
+		Another good thing about branch is that it helps Git to easily merge the versions later on.  Different branches can be merged 
+		into any one branch provided that they belong to the same repository.
 
 		You are free to create branches in any way you want. 
 
-Pull Request:	Takes changes from one branch and pull them in a different branch.
+#### Pull Request:	Takes changes from one branch and pull them in a different branch.
 
-Merge:		Merge the changes of one branch to other.
+#### Merge:		Merge the changes of one branch to other.
 
-Graph: 		Network and branching.
+#### Graph: 		Network and branching.
 		Main Repo => Graph => Network
 
 
