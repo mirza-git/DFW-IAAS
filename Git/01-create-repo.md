@@ -24,5 +24,18 @@ You can create GitHub repo two ways, using GitHub via browser or via REST-API
 Execute command below to create REPO:
 
 ```
+## Change username to your GitHub account and change Project name ##
 curl -u 'your-github-user' https://api.github.com/user/repos -d '{"name":"my_first_repo","description":"This project is a test"}'
 ```
+
+Script to read userInput:
+
+```
+read -p "GitHub_Username: " GitUSER
+read -p -x "Github Password: " GitPass
+read -p "Git Repo Name: " GitRepoName
+
+
+curl -u $GitUSER:$GitPass https://api.github.com/user/repos -d '{"name":"DFW-IaC-'${GitRepoName}'","description":"This project is a test"}'
+```
+
