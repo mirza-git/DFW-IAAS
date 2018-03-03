@@ -1,18 +1,29 @@
-Example 
+![alt text](https://camo.githubusercontent.com/fb782da4019ab66eeea35cc9b9ce73b2438b1688/687474703a2f2f646f632e72756c746f722e636f6d2f696d616765732f6769746875622d6c6f676f2e706e67 "Logo Title Text 1")
 
-first go to github
+# GIT tutorial
 
-create a new repo StudyGroup
+##### *Note: Git client or GUI should be installed on client workstation - all git command*
 
-create a file content = add linux git jenkins
-create a file studnets = add student data
-create a file meetupschedule = add schedule
+In this tutorial we will work with GitHub - GitHub is version control tool that allows multiple users to modify and update code with revision control.
 
-show the changes via history of the file
+In this tutorial we will look into branching of original repository.
 
-explain we are in master branch
 
-show the network graph 
+##### Create a new repo StudyGroup
+
+##### *Note: Create repo with your first name and last initial *
+
+What we will do in this lab:
+
+##### create a file content = add linux git jenkins
+##### create a file studnets = add student data
+##### create a file meetupschedule = add schedule
+
+##### show the changes via history of the file
+
+##### explain we are in master branch
+
+##### show the network graph 
 
 now create a new branch call linux
 
@@ -27,13 +38,13 @@ explain why we are adding linux files to master
 from master click on pull
 add comments 
 
-it will check for any confilicts
+it will check for any confilicts 
 
 now do this on your server
 
 
 1) clone repo from git up 
-git clone https://github.com/naqvisn/test2.git
+git clone https://github.com/simpleweb/simpleweb.git
 
 2) cd to the directory, it is already initialize for git
 cd <project name>
@@ -87,16 +98,6 @@ ls -al
 
 17) push all these changes back to github repo
 git push --all origin
-
-
-
-
-
-
-
-
- 
-
 
 
 
