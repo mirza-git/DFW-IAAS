@@ -1,0 +1,31 @@
+---
+- name: Install and start apache web server
+  hosts: web
+  become: yes
+  gather_facts: false
+  vars:
+    should_update_index: "yes"
+
+  tasks:
+    - name: install apache
+      yum:
+        name: httpd
+        state: present
+      
+    - name: start apache
+      service:
+        name: httpd
+        state: started
+
+    - name: Populate index file
+      shell: echo "Hello world `date`" >> /var/www/html/index.html
+      changed_when: false
+      when: should_update_index == "yes"
+
+    - name: Display content of index file
+      shell: cat /var/www/html/index.html
+      changed_when: false
+      register: cat_index_cmd_output
+
+    - debug:
+        var: cat_index_cmd_output.stdout_lines

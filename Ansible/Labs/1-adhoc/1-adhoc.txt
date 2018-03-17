@@ -1,0 +1,24 @@
+# Ping module check if node is responsive.
+
+ansible web -m ping
+
+# Command module:
+
+ansible web -m command -a "uptime" -o
+
+# setup module to get information about the target node
+
+ansible web -m setup
+
+# install apache using yum module. Use -b flag to su to root user. 
+
+ansible web -m yum -a "name=httpd state=present" -b
+
+# Start Apache server using service module
+
+ansible web -m service -a "name=httpd state=started" -b
+
+# Now Stop and remove apache server
+
+ansible web -m service -a "name=httpd state=stopped" -b
+ansible web -m yum -a "name=httpd state=absent" -b

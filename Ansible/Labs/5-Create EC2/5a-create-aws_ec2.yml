@@ -1,0 +1,28 @@
+---
+- name: Create AWS EC2 instance
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  vars:
+    instance_type: t2.micro
+    image: ami-1853ac65                                                 # replace this with your AMI ID
+    keypair: iaccpk.pem                                                 # replace this with your Private key
+    #my_iam_aws_access_key: XXXXXXXXXXXXXXXXXXX                         # Replace this with youor access_key
+    #my_iam_aws_secret_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     # Replace this with your secret key
+    region: us-east-1
+  tasks:
+    - name: Create an EC2 instance
+      ec2:
+        #aws_access_key: "{{ my_iam_aws_access_key }}"
+        #aws_secret_key: "{{ my_iam_aws_secret_key }}"
+        key_name: "{{ keypair }}"
+        instance_type: "{{ instance_type }}"
+        image: "{{ image }}"
+        region: "{{ region }}"
+        wait: yes
+        count: 1
+        instance_tags:
+          Name: iacc-test1
+      register: ec2_info
+    - name: Display EC2 properties
+      debug: var=ec2_info.instances

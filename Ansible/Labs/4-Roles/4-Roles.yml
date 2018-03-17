@@ -1,0 +1,39 @@
+---
+- name: Install and start apache web server
+  hosts: web
+  become: yes
+  gather_facts: false
+
+  roles:
+    - install_apache
+
+  vars:
+httpd_packages:
+  - httpd
+  - vim
+  - wget
+
+  tasks:
+- name: install apache
+  yum:
+    name: "{{ item }}"
+    state: present
+  with_items: "{{ httpd_packages }}"
+  notify: restart apache service
+
+- name: Populate index file
+  shell: echo "Hello world 1234" >> /var/www/html/index.html
+  notify: restart apache service
+  changed_when: false
+
+- name: start apache
+  service:
+    name: httpd
+    state: started
+    enabled: yes     
+
+  handlers:
+- name: restart apache service
+  service:
+    name: httpd
+    state: restarted

@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  name: Terminate AWS instance
+  connection: local
+  gather_facts: False
+  vars:
+    my_instance_id: i-0df07f4d288ec1430
+    #my_iam_aws_access_key: XXXXXXXXXXXXXXXXXXX                         # Replace this with youor access_key
+    #my_iam_aws_secret_key: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX     # Replace this with your secret key
+
+  tasks:
+    - name: Terminate an EC2 instance
+      ec2:
+        #aws_access_key: "{{ my_iam_aws_access_key }}"
+        #aws_secret_key: "{{ my_iam_aws_secret_key }}"
+        instance_ids: "{{ my_instance_id }}"                               # Replace this with your instance_id
+        state: absent
+        region: us-east-1
+        wait: yes

@@ -1,0 +1,19 @@
+---
+- name: Install and start apache web server
+  hosts: web
+  become: yes
+  gather_facts: false
+  vars:
+    httpd_packages: httpd
+  tasks:
+    - name: stop apache
+      service:
+        name: httpd
+        state: stopped
+    - name: remove apache
+      yum:
+        name: "{{ httpd_packages }}"
+        state: absent
+    - name: remove index file
+      shell: rm -f /var/www/html/index.html
+      changed_when: false
